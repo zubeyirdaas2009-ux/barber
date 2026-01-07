@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>صالون الحلاقة الرجالي</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <div class="top-bar">
+        <div class="admin-select">
+        <button onclick="openAdminModal('barber1')">دخول أدمن 1</button>
+        <button onclick="openAdminModal('barber2')">دخول أدمن 2</button>
+    </div>
+
+    
+    <h1>💈 صالون الحلاقة الرجالي</h1>
+            <span class="spacer"></span>
+        </div>
+        <p>أناقة • احتراف • راحة</p>
+    </header>
+
+
+    <section>
+    <h2>خدماتنا</h2>
+    <div class="services">
+        <div class="service">✂️ قص شعر – 50</div>
+        <div class="service">🧔‍♂️ حلاقة لحية – 30</div>
+        <div class="service">💆‍♂️ تنظيف بشرة – 40</div>
+        <div class="service">🔥 حلاقة كاملة – 70</div>
+    </div>
+</section>
+
+<section>
+    <h2>احجز موعدك</h2>
+    <form id="bookingForm">
+        <input id="name" placeholder="الاسم" required>
+        <input id="phone" placeholder="رقم الهاتف" required>
+        <select id="service" required>
+            <option value="">اختر الخدمة</option>
+            <option>قص شعر</option>
+            <option>حلاقة لحية</option>
+        </select>
+
+        <select id="barber" required>
+            <option value="">اختر الحلاق</option>
+            <option value="barber1">الحلاق 1</option>
+            <option value="barber2">الحلاق 2</option>
+        </select>
+        <input type="time" id="time" required>
+        <button>حجز</button>
+    </form>
+    
+    <script src="js/booking.js"></script>
+    
+</section>
+
+<footer>
+    © 2026 صالون الحلاقة – جميع الحقوق محفوظة
+</footer>
+
+<div id="adminModal" class="modal">
+    <div class="modal-content">
+        <h3>🔐 دخول الأدمن</h3>
+        <input type="password" id="adminPassword" placeholder="أدخل الرمز (أرقام فقط)">
+        <p id="adminError" class="error"></p>
+        <div class="modal-actions">
+            <button id="loginBtn">دخول</button>
+            <button class="cancel" id="closeModal">إلغاء</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/admin-login.js"></script>
+</body>
+</html>

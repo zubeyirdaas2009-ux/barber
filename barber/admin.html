@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>لوحة تحكم الأدمن</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+
+<header class="admin-header">
+    <h1>لوحة تحكم الأدمن</h1>
+    <p>إدارة الحجوزات والخدمات</p>
+</header>
+
+<section class="dashboard">
+    
+    <div class="card">
+        <h3>عدد الحجوزات</h3>
+        <span class="number">0</span>
+    </div>
+
+    <div class="card">
+        <h3>الحجوزات اليوم</h3>
+        <span class="number">0</span>
+    </div>
+
+    <div class="card">
+        <h3>الخدمات</h3>
+        <span class="number">0</span>
+    </div>
+
+</section>
+
+<section class="table-section">
+    <h2>قائمة الحجوزات</h2>
+
+    <div class="table">
+    <div class="row header">
+        <span>الاسم</span>
+        <span>الهاتف</span>
+        <span>الخدمة</span>
+        <span>الوقت</span>
+        <span>الحالة</span>
+    </div>
+
+    <div id="bookingRows"></div>
+</div>
+
+<script src="js/admin-bookings.js"></script>
+</section>
+
+
+<footer>
+    © 2026 لوحة تحكم صالون الحلاقة
+</footer>
+
+</body>
+</html>
